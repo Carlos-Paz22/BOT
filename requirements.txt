@@ -1,0 +1,5 @@
+eyed3
+python-telegram-bot
+gunicorn==20.1.0
+python-doten==0.20.0
+urllib3==1.26.9
