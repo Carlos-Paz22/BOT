@@ -20,7 +20,7 @@ def fetchjson(url):
 
 def start(update, context):
     #context.bot.sendMessage(chat_id= update.effective_chat.id,     
-    text= "Hola: {yourname}  !"  .format(yourname=update.effective_user.full_name) + "\n \n" "Este es un bot 🤖 para descargar musica ✅🎶" + "\n\n" + "Authors: 🥷🏻 Franklin Molina & Carlos Paz 🥷🏻"
+    text= "Hola: {yourname}  !"  .format(yourname=update.effective_user.full_name) + "\n \n" "Este es un bot 🤖 para descargar musica de https://www.jiosaavn.com/ ✅🎶" + "\n\n" + "Authors: 🥷🏻 Franklin Molina & Carlos Paz 🥷🏻"
    
   
     update.message.reply_text(text)
@@ -29,7 +29,7 @@ def download(update, context):
     
     x = update.message.parse_entities(types = MessageEntity.URL)
   
-    msg = update.message.reply_text("Estamos trabaando...")
+    msg = update.message.reply_text("Estamos trabajando... ⛏⛏⛏")
     for i in x:            
         try:
             rjson = fetchjson(endpoint_link + x[i])
